@@ -15,7 +15,6 @@ const divStyle = css`
     color: ${color};
   }
 `;
-color test = "test"
 
 function App() {
   return (
