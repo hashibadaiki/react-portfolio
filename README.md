@@ -1,12 +1,13 @@
-# React.jsで作成したポートフォリオサイト
+# React.js で作成したポートフォリオサイト
 
-以前作成したポートフォリオサイトをReactで作り直した。
+以前作成したポートフォリオサイトを React で作り直した。
 
 [以前のポートフォリオサイト](https://baan.work/)
 
-[その時のGitHub](https://github.com/hashibadaiki/react-portfolio.git)
+[その時の GitHub](https://github.com/hashibadaiki/Newportfolio)
 
 ## 技術スタック
+
 - "@emotion/core": "^10.0.35"
 - "react": "^16.13.1"
 
