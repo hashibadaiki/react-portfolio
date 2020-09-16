@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 import React from "react";
-import "./App.css";
 import { Test } from "./Test";
 
 const color = "white";
