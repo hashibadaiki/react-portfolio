@@ -1,11 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./header";
+import Header from "./header";
+import MainHeroImg from "./mainHeroImg";
+import MainPortfolio from "./mainPortfolio";
+import MainAboutMe from "./mainAboutMe";
+import MainAndMore from "./mainAndMore";
+import Footer from "./footer";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Header />
+    <MainHeroImg />
+    <MainPortfolio />
+    <MainAboutMe />
+    <MainAndMore />
+    <Footer />
   </React.StrictMode>,
   document.getElementById("root")
 );
