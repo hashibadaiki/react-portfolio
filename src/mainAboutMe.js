@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 import React from "react";
-import icon from "./images/profile.jpg";
+import ProfilePicture from "./images/profile.jpg";
 
 function MainAboutMe() {
   return (
@@ -12,7 +12,7 @@ function MainAboutMe() {
       <ul class="profileList">
         <li class="profileList__img">
           <img
-            src={icon}
+            src={ProfilePicture}
             alt="ばーんの写真"
             class="profileList__img--current"
           />
