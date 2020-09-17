@@ -5,7 +5,7 @@ import React from "react";
 function Footer() {
   return (
     <footer class="contact footer">
-      <address class="HowToContact">
+      <address class="howToContact">
         <ul class="contactList">
           <a href="https://twitter.com/baan_nasebanaru">
             <li class="contactList__twitter">
