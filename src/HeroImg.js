@@ -1,12 +1,60 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
+import hero_image from "./images/heroImage.jpg";
+
+const hero__image = css`
+  background-image: url(${hero_image}});
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  max-width: 1280px;
+  z-index: 1;
+`;
+const hero__imageBack = css`
+  background: linear-gradient(
+    to top,
+    rgba(207, 22, 22, 0),
+    rgba(240, 236, 236, 0.795) 90%
+  );
+  max-width: 1280px;
+  height: 300px;
+  background-position: center;
+  z-index: 2;
+`;
+
+const titleEnclose = css`
+  display: flex;
+  flex-wrap: nowrap;
+`;
+
+const hero__title = css`
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 0 10px;
+  width: 80%;
+`;
+
+const hero__title__pc = css`
+  display: none;
+`;
+
+const buttonEnclose = css`
+  width: 20%;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  right: 0;
+`;
 
 function MainHeroImg() {
   return (
-    <div class="hero__image">
-      <div class="hero__image--backColor">
-        <div class="titleEnclose">
-          <h1 class="hero__title">
+    <div css={hero__image} class="hero__image">
+      <div css={hero__imageBack} class="hero__image--backColor">
+        <div css={titleEnclose} class="titleEnclose">
+          <h1 css={hero__title} class="hero__title">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="125"
@@ -39,7 +87,7 @@ function MainHeroImg() {
             </svg>
           </h1>
 
-          <h1 class="hero__title__pc">
+          <h1 css={hero__title__pc} class="hero__title__pc">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="420"
@@ -72,7 +120,7 @@ function MainHeroImg() {
             </svg>
           </h1>
 
-          <div class="buttonEnclose">
+          <div css={buttonEnclose} class="buttonEnclose">
             <div class="buttonEnclose__inner">
               <button type="button" class="zdo_drawer_button">
                 <span class="zdo_drawer_bar zdo_drawer_bar1"></span>
