@@ -12,6 +12,7 @@ const contactList = css`
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+  font-size: 1.5rem;
 `;
 
 const contactList_twitter_github = css`
@@ -24,12 +25,12 @@ const contactList_facebook = css`
 `;
 
 const howToContact = css`
-  padding: 30px 0 10px 0;
+  padding: 60px 0 20px 0;
 `;
 
 const copyright = css`
   text-align: center;
-  padding: 5px 0;
+  padding: 20px 0;
   font-size: 0.9rem;
   color: rgb(238, 242, 245);
 `;

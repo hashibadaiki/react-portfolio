@@ -31,7 +31,7 @@ const titleEnclose = css`
 `;
 
 const hero__title__pc = css`
-  padding: 100px 20px;
+  padding: 100px 40px;
 `;
 
 const siteTitle = css`
@@ -39,7 +39,7 @@ const siteTitle = css`
   height: 150px;
 `;
 
-function MainHeroImg() {
+function HeroImg() {
   return (
     <div css={hero__image} class="hero__image">
       <div css={hero__imageBack} class="hero__image--backColor">
@@ -58,4 +58,4 @@ function MainHeroImg() {
   );
 }
 
-export default MainHeroImg;
+export default HeroImg;

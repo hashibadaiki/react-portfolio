@@ -11,9 +11,9 @@ const basicStyle = css`
 `;
 
 const portfolio__title = css`
-  font-size: 1.5rem;
+  font-size: 3rem;
   padding-top: 30px;
-  font-family: Oswald', sans-serif;
+  font-family: "Gill Sans", sans-serif;
 `;
 
 const portfolioList = css`
@@ -83,7 +83,7 @@ const white = css`
   }
 `;
 
-function MainPortfolio() {
+function Portfolio() {
   return (
     <section css={basicStyle} class="portfolio basicStyle position-now">
       <h2 css={portfolio__title} class="portfolio__title" id="goPortfolio">
@@ -171,4 +171,4 @@ function MainPortfolio() {
   );
 }
 
-export default MainPortfolio;
+export default Portfolio;

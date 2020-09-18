@@ -12,9 +12,9 @@ const basicStyle = css`
 `;
 
 const profile__title = css`
-  font-size: 1.5rem;
+  font-size: 3rem;
   padding-bottom: 20px;
-  font-family: "Gill Sans", sans-seriff;
+  font-family: "Gill Sans", sans-serif;
 `;
 
 const profileList = css`
@@ -25,29 +25,42 @@ const profileList = css`
 
 const profileList__img = css`
   text-align: center;
-  height: 250px;
+  height: 350px;
   background-color: rgba(230, 237, 238, 0.315);
   border-radius: 3px;
+  width: 60%;
+  display: inline-block;
+  margin-right: 15px;
 `;
 
 const profileList__imgCurrent = css`
   border-radius: 3px;
-  height: 250px;
+  height: 350px;
 `;
 
-const profileList__aboutMe__workExperience = css`
-  margin: 30px 0;
+const profileList__aboutMe = css`
+  width: 35%;
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
 `;
 
-const profileList__index__name = css`
+const profileList__details = css`
   color: rgb(20, 19, 19);
   font-family: "Gill Sans", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: bold;
+  margin: 10px 0;
+`;
+
+const profileList__workExperience = css`
+  margin: 30px 0;
 `;
 
 const profileText = css`
   font-size: 1.1rem;
+  line-height: 2;
+}
 `;
 
 const addProfile = css`
@@ -84,7 +97,7 @@ transition: 0.8s linear;
 }
 `;
 
-function MainAboutMe() {
+function AboutMe() {
   return (
     <section css={basicStyle} class="profile basicStyle position-now">
       <h2 css={profile__title} class="profile__title" id="goAbout">
@@ -99,11 +112,8 @@ function MainAboutMe() {
             class="profileList__img--current"
           />
         </li>
-        <li
-          css={profileList__aboutMe__workExperience}
-          class="profileList__aboutMe"
-        >
-          <p css={profileList__index__name} class="profileList__aboutMe__name">
+        <li css={profileList__aboutMe} class="profileList__aboutMe">
+          <p css={profileList__details} class="profileList__aboutMe__name">
             名前：ばーん
           </p>
           <div css={profileText} class="profileText">
@@ -125,14 +135,22 @@ function MainAboutMe() {
             </p>
           </div>
         </li>
-        <li class="profileList__workExperience">
-          <p class="profileList__workExperience__index  position-now">経歴</p>
-          <div class="profileText">
+        <li
+          css={profileList__workExperience}
+          class="profileList__workExperience"
+        >
+          <p
+            css={profileList__details}
+            class="profileList__workExperience__index  position-now"
+          >
+            経歴
+          </p>
+          <div css={profileText} class="profileText">
             新卒でパチンコ店大手に就職。管理職6年経験。組合員数500人を超える組合長を経験。運営に3年間携わり視座を体得。
             <br />
             特に対人の洞察力が優れており、安定した組織運営で評価を獲得。
             <br />
-            <p class="addProfile">
+            <p css={addProfile} class="addProfile">
               ・数値分析と人材育成により、商品廃棄率0％の達成。また、前年比売上120％達成(10ヶ月間)
               <br />
               ・新店舗の立ち上げ経験。初年度目標客数150％の達成
@@ -144,4 +162,4 @@ function MainAboutMe() {
   );
 }
 
-export default MainAboutMe;
+export default AboutMe;

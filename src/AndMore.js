@@ -11,7 +11,7 @@ const type = css`
   text-align: center;
 `;
 
-function MainAndMore() {
+function AndMore() {
   return (
     <div css={type} class="type">
       <span css={iTyped} id="iTyped"></span>
@@ -19,4 +19,4 @@ function MainAndMore() {
   );
 }
 
-export default MainAndMore;
+export default AndMore;
