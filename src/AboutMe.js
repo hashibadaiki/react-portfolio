@@ -14,13 +14,13 @@ const basicStyle = css`
 const profile__title = css`
   font-size: 1.5rem;
   padding-bottom: 20px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Gill Sans", sans-seriff;
 `;
 
 const profileList = css`
   font-size: 1.1rem;
   padding-bottom: 20px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Gill Sans", sans-serif;
 `;
 
 const profileList__img = css`
@@ -41,7 +41,7 @@ const profileList__aboutMe__workExperience = css`
 
 const profileList__index__name = css`
   color: rgb(20, 19, 19);
-  font-family: "Oswald", sans-serif;
+  font-family: "Gill Sans", sans-serif;
   font-size: 1.1rem;
   font-weight: bold;
 `;
