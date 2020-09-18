@@ -2,7 +2,6 @@ import React from "react";
 import HeroImg from "./HeroImg";
 import Portfolio from "./Portfolio";
 import AboutMe from "./AboutMe";
-import AndMore from "./AndMore";
 
 function Main() {
   return (
@@ -10,7 +9,6 @@ function Main() {
       <HeroImg />
       <Portfolio />
       <AboutMe />
-      <AndMore />
     </div>
   );
 }
