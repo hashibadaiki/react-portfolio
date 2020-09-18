@@ -12,16 +12,20 @@ const basicStyle = css`
 
 const portfolio__title = css`
   font-size: 3rem;
-  padding-top: 30px;
+  padding: 30px 0;
   font-family: "Gill Sans", sans-serif;
 `;
 
 const portfolioList = css`
   line-height: 1.2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 `;
 
 const portfolioList_card = css`
-  margin: 15px 0;
+  height: 150px;
+  margin: 0;
   padding: 10px;
   border: solid 1px rgb(179, 175, 175);
   border-radius: 3px;
@@ -51,24 +55,11 @@ const portfolioList_card = css`
     height: 50%;
     transition: 0.4s linear;
   }
-`;
-
-const portfolioList_card_title = css`
-  font-family: "Oswald", sans-serif;
-  font-size: 1.5rem;
-  padding-bottom: 5px;
-`;
-
-const portfolioList_card_text = css`
-  font-size: 1.1rem;
-  padding-top: 10px;
-  color: rgb(20, 19, 19);
-`;
-
-const white = css`
   &:hover {
-    transition: 0.8s linear;
-    color: rgb(238, 242, 245);
+    * {
+      transition: 0.8s linear;
+      color: rgb(238, 242, 245);
+    }
 
     &::before {
       bottom: 0;
@@ -83,6 +74,24 @@ const white = css`
   }
 `;
 
+const portfolioList_card_title = css`
+  font-family: "Gill Sans", sans-serif;
+  font-size: 1.5rem;
+  padding-bottom: 5px;
+  color: rgb(20, 19, 19);
+`;
+
+const portfolioList_card_text = css`
+  font-size: 1.5rem;
+  padding-top: 10px;
+  color: rgb(20, 19, 19);
+`;
+
+const portfolioList_card_link = css`
+  width: 45%;
+  margin: 15px;
+`;
+
 function Portfolio() {
   return (
     <section css={basicStyle} class="portfolio basicStyle position-now">
@@ -90,76 +99,80 @@ function Portfolio() {
         My portfolio
       </h2>
       <ul css={portfolioList} class="portfolioList">
-        <a href="https://minsyuku-example.netlify.com/index.html">
+        <a
+          class="portfolioList_card_link"
+          css={portfolioList_card_link}
+          href="https://minsyuku-example.netlify.com/index.html"
+        >
           <li css={portfolioList_card} class="portfolioList__minsyuku">
             <h3
-              css={[portfolioList_card_title, white]}
+              css={[portfolioList_card_title]}
               class="portfolioList__minsyuku__title minsyukuWhite"
             >
               民宿(擬似サイト)
             </h3>
-            <span css={white} class="minsyukuWhite">
-              学習20日で制作
-            </span>
+            <span class="minsyukuWhite">学習20日で制作</span>
             <p
-              css={[portfolioList_card_text, white]}
+              css={[portfolioList_card_text]}
               class="portfolioList__minsyuku__text minsyukuWhite"
             >
               架空の民宿をイメージして制作したWebsiteです。
             </p>
           </li>
         </a>
-        <a href="https://baanportfolio.netlify.com/">
+        <a
+          class="portfolioList_card_link"
+          css={portfolioList_card_link}
+          href="https://baanportfolio.netlify.com/"
+        >
           <li css={portfolioList_card} class="portfolioList__firstPortfolio">
             <h3
-              css={[portfolioList_card_title, white]}
+              css={[portfolioList_card_title]}
               class="portfolioList__firstPortfolio__title firstPortfolioWhite"
             >
               Portfolio(first)
             </h3>
-            <span css={white} class="firstPortfolioWhite">
-              学習50日で制作
-            </span>
+            <span class="firstPortfolioWhite">学習50日で制作</span>
             <p
-              css={[portfolioList_card_text, white]}
+              css={[portfolioList_card_text]}
               class="portfolioList__firstPortfolio__text firstPortfolioWhite"
             >
               初めて制作したポートフォリオサイトです。
             </p>
           </li>
         </a>
-        <a href="https://qiita.com/baan_nasebanaru">
+        <a
+          class="portfolioList_card_link"
+          css={portfolioList_card_link}
+          href="https://qiita.com/baan_nasebanaru"
+        >
           <li css={portfolioList_card} class="portfolioList__Qiita">
             <h3
-              css={[portfolioList_card_title, white]}
+              css={[portfolioList_card_title]}
               class="portfolioList__Qiita__title qiitaWhite"
             >
               制作記事
             </h3>
-            <span css={white} class="qiitaWhite">
-              学習20日目から継続
-            </span>
+            <span class="qiitaWhite">学習20日目から継続</span>
             <p
-              css={[portfolioList_card_text, white]}
+              css={[portfolioList_card_text]}
               class="portfolioList__Qiita__text qiitaWhite"
             >
               過去に執筆した記事の一覧です。
             </p>
           </li>
         </a>
-        <a>
+        <a class="portfolioList_card_link" css={portfolioList_card_link}>
           <li css={portfolioList_card} class="portfolioList__comingSoon">
             <h3
-              css={[portfolioList_card_title, white]}
+              css={[portfolioList_card_title]}
               class="portfolioList__comingSoon__title comingSoonWhite"
             >
               API連携
             </h3>
-            <span css={white} class="comingSoonWhite">
-              学習60日目から作成中
-            </span>
+            <span class="comingSoonWhite">学習60日目から作成中</span>
             <p
-              css={[portfolioList_card_text, white]}
+              css={[portfolioList_card_text]}
               class="portfolioList__comingSoon__text comingSoonWhite"
             >
               現在制作中
