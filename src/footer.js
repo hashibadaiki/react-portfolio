@@ -2,7 +2,7 @@
 import { css, jsx } from "@emotion/core";
 
 const footer = css`
-  background-color: rgba(12, 12, 11, 0.925);
+  background-color: rgba(12, 12, 12, 0.925);
   li {
     list-style-type: none;
   }

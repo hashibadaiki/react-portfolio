@@ -3,12 +3,14 @@ import { css, jsx } from "@emotion/core";
 import hero_image from "./images/heroImage.jpg";
 
 const hero__image = css`
-  background-image: url(${hero_image}});
+  background-image: url(${hero_image});
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 600px;
+  width: 100%;
   max-width: 1280px;
-  z-index: 1;
+  z-index: 2;
+  position: relative;
 `;
 const hero__imageBack = css`
   background: linear-gradient(
@@ -19,7 +21,7 @@ const hero__imageBack = css`
   max-width: 1280px;
   height: 300px;
   background-position: center;
-  z-index: 2;
+  z-index: 10;
 `;
 
 const titleEnclose = css`
@@ -47,6 +49,7 @@ const buttonEnclose = css`
   z-index: 4;
   top: 0;
   right: 0;
+  display: none;
 `;
 
 function MainHeroImg() {

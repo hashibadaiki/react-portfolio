@@ -6,40 +6,38 @@ const navigationWide = css`
   width: 100%;
   transform: scale(1, 1);
   height: 80px;
-  background-color: rgba(12, 12, 11, 0.925);
-  color: rgb(238, 242, 245);
-  z-index: 10;
+  color: #eef2f5;
+  z-index: 1000;
+  position: fixed;
 `;
 
 const navigationList = css`
+  display: flex;
+  z-index: 100;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
   font-size: 2rem;
   text-align: center;
-  display: none;
+  background-color: rgba(12, 12, 11, 0.925);
 `;
 
-const navigationList__portfolio = css`
-  padding-top: 150px;
-`;
-
-const navigationList__profile_contact_top = css`
-  padding-top: 50px;
+const navigationListStyle = css`
   list-style-type: none;
 `;
 
 const navigationList__btn = css`
   display: inline-block;
   cursor: pointer;
-  font-family: "Oswald", sans-serif;
+  font-family: "Gill Sans", sans-serif;
 `;
 
 function Header() {
   return (
     <nav css={navigationWide} class="navigation wide">
       <ul css={navigationList} class="navigationList" id="navigationWide__js">
-        <li
-          css={navigationList__profile_contact_top}
-          class="navigationList__top"
-        >
+        <li css={navigationListStyle} class="navigationList__top">
           <div
             css={navigationList__btn}
             class="navigationList__btn"
@@ -48,7 +46,7 @@ function Header() {
             TOP
           </div>
         </li>
-        <li css={navigationList__portfolio} class="navigationList__portfolio">
+        <li css={navigationListStyle} class="navigationList__portfolio">
           <div
             css={navigationList__btn}
             class="navigationList__btn"
@@ -57,10 +55,7 @@ function Header() {
             My portfolio
           </div>
         </li>
-        <li
-          css={navigationList__profile_contact_top}
-          class="navigationList__profile"
-        >
+        <li css={navigationListStyle} class="navigationList__profile">
           <div
             css={navigationList__btn}
             class="navigationList__btn"
@@ -69,10 +64,7 @@ function Header() {
             About me
           </div>
         </li>
-        <li
-          css={navigationList__profile_contact_top}
-          class="navigationList__contact"
-        >
+        <li css={navigationListStyle} class="navigationList__contact">
           <div
             css={navigationList__btn}
             class="navigationList__btn"
