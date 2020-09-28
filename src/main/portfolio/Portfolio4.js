@@ -36,7 +36,7 @@ const portfolioList_card_link = css`
 
 function Portfolio4() {
   return (
-    <a class="portfolioList_card_link" css={portfolioList_card_link}>
+    <div class="portfolioList_card_link" css={portfolioList_card_link}>
       <div css={portfolioList_card} class="portfolioList__comingSoon">
         <h3
           css={[portfolioList_card_title]}
@@ -52,7 +52,7 @@ function Portfolio4() {
           現在制作中
         </p>
       </div>
-    </a>
+    </div>
   );
 }
 
