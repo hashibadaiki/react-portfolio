@@ -1,10 +1,6 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
-import { baseCSS } from "./Const.js";
-import  from "";
-import  from "";
-import  from "";
-import  from "";
+import { baseCSS } from "../../Const.js";
 
 const basicStyle = css`
   width: 80%;
@@ -97,7 +93,7 @@ const portfolioList_card_link = css`
   margin: 15px;
 `;
 
-function Portfolio() {
+function Portfolio3() {
   return (
     <section css={basicStyle} class="portfolio basicStyle position-now">
       <h2 css={portfolio__title} class="portfolio__title" id="goPortfolio">
@@ -189,4 +185,4 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default Portfolio3;

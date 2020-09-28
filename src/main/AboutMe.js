@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
-import profile_picture from "./images/profile.jpg";
-import { baseCSS } from "./Const.js";
+import profile_picture from "../images/profile.jpg";
+import { baseCSS } from "../Const";
 
 const basicStyle = css`
   width: 80%;
