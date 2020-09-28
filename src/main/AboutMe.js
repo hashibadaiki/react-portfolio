@@ -3,6 +3,10 @@ import { css, jsx } from "@emotion/core";
 import profile_picture from "../images/profile.jpg";
 import { baseCSS } from "../Const";
 
+const breakpoints = [768, 992, 1200];
+
+const mq = breakpoints.map((bp) => `@media (min-width: ${bp}px)`);
+
 const basicStyle = css`
   width: 80%;
   margin: 0 auto;
@@ -61,7 +65,6 @@ const profileList__workExperience = css`
 const profileText = css`
   font-size: 1.1rem;
   line-height: 2;
-}
 `;
 
 const addProfile = css`
@@ -69,39 +72,49 @@ const addProfile = css`
 `;
 
 const contactTwitter = css`
-font-size: 0.9rem;
-display: inline-block;
-padding: 5px;
-text-decoration: none;
-overflow: hidden;
-position: relative;
-z-index: 1;
-transition: 0.8s linear;
-  &::after{
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  transition: 0.3s linear;
-  border-radius: 3px;
+  font-size: 0.9rem;
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transition: 0.8s linear;
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s linear;
+    border-radius: 3px;
   }
-  &:hover{
-  color: #faf6f6;
-    &::after{
-    left: 0;
-    background-color: rgb(30, 223, 236);
+  &:hover {
+    color: #faf6f6;
+    &::after {
+      left: 0;
+      background-color: rgb(30, 223, 236);
     }
   }
-}
 `;
 
 function AboutMe() {
   return (
     <section css={basicStyle} class="profile basicStyle position-now">
-      <h2 css={profile__title} class="profile__title" id="goAbout">
+      <h2
+        css={
+          (profile__title,
+          {
+            [mq[0]]: {
+              fontSize: "4rem",
+            },
+          })
+        }
+        class="profile__title"
+        id="goAbout"
+      >
         About me
       </h2>
       <ul css={profileList} class="profileList">
