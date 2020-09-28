@@ -2,28 +2,6 @@
 import { css, jsx } from "@emotion/core";
 import { baseCSS } from "../../Const.js";
 
-const basicStyle = css`
-  width: 80%;
-  margin: 0 auto;
-  padding: 30px 0;
-  li {
-    list-style-type: none;
-  }
-`;
-
-const portfolio__title = css`
-  font-size: 3rem;
-  padding: 30px 0;
-  font-family: ${baseCSS.englishFont};
-`;
-
-const portfolioList = css`
-  line-height: 1.2;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-`;
-
 const portfolioList_card = css`
   height: 150px;
   margin: 0;

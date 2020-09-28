@@ -10,9 +10,6 @@ const basicStyle = css`
   width: 80%;
   margin: 0 auto;
   padding: 30px 0;
-  li {
-    list-style-type: none;
-  }
 `;
 
 const portfolio__title = css`
