@@ -78,7 +78,7 @@ function Portfolio3() {
       css={portfolioList_card_link}
       href="https://qiita.com/baan_nasebanaru"
     >
-      <li css={portfolioList_card} class="portfolioList__Qiita">
+      <div css={portfolioList_card} class="portfolioList__Qiita">
         <h3
           css={[portfolioList_card_title]}
           class="portfolioList__Qiita__title qiitaWhite"
@@ -92,7 +92,7 @@ function Portfolio3() {
         >
           過去に執筆した記事の一覧です。
         </p>
-      </li>
+      </div>
     </a>
   );
 }
