@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
+import { baseCSS } from "./Const.js";
 
 const basicStyle = css`
   width: 80%;
@@ -13,7 +14,7 @@ const basicStyle = css`
 const portfolio__title = css`
   font-size: 3rem;
   padding: 30px 0;
-  font-family: "Gill Sans", sans-serif;
+  font-family: ${baseCSS.englishFont};
 `;
 
 const portfolioList = css`
@@ -27,10 +28,10 @@ const portfolioList_card = css`
   height: 150px;
   margin: 0;
   padding: 10px;
-  border: solid 1px rgb(179, 175, 175);
+  border: solid 1px ${baseCSS.annotationColor};
   border-radius: 3px;
   font-size: 0.9rem;
-  color: rgb(129, 126, 126);
+  color: ${baseCSS.annotationColor};
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -58,33 +59,33 @@ const portfolioList_card = css`
   &:hover {
     * {
       transition: 0.8s linear;
-      color: rgb(238, 242, 245);
+      color: ${baseCSS.headFooterColor};
     }
 
     &::before {
       bottom: 0;
       right: 0;
-      background-color: rgba(12, 12, 11, 0.925);
+      background-color: ${baseCSS.backGroundColor};
     }
     &::after {
       top: 0;
       left: 0;
-      background-color: rgba(12, 12, 11, 0.925);
+      background-color: ${baseCSS.backGroundColor};
     }
   }
 `;
 
 const portfolioList_card_title = css`
-  font-family: "Gill Sans", sans-serif;
+  font-family: ${baseCSS.englishFont};
   font-size: 1.5rem;
   padding-bottom: 5px;
-  color: rgb(20, 19, 19);
+  color: ${baseCSS.pickUpColor};
 `;
 
 const portfolioList_card_text = css`
   font-size: 1.5rem;
   padding-top: 10px;
-  color: rgb(20, 19, 19);
+  color: ${baseCSS.pickUpColor};
 `;
 
 const portfolioList_card_link = css`

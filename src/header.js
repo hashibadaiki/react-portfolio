@@ -1,12 +1,13 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
+import { baseCSS } from "./Const.js";
 
 const navigationWide = css`
   display: inline-block;
   width: 100%;
   transform: scale(1, 1);
   height: 80px;
-  color: #eef2f5;
+  color: ${baseCSS.headFooterColor};
   z-index: 1000;
   position: fixed;
 `;
@@ -20,7 +21,7 @@ const navigationList = css`
   width: 100%;
   font-size: 2rem;
   text-align: center;
-  background-color: rgba(12, 12, 11, 0.925);
+  background-color: ${baseCSS.backGroundColor};
 `;
 
 const navigationListStyle = css`
@@ -30,7 +31,7 @@ const navigationListStyle = css`
 const navigationList__btn = css`
   display: inline-block;
   cursor: pointer;
-  font-family: "Gill Sans", sans-serif;
+  font-family: ${baseCSS.englishFont};
 `;
 
 function Header() {

@@ -1,8 +1,9 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
+import { baseCSS } from "./Const.js";
 
 const footer = css`
-  background-color: rgba(12, 12, 12, 0.925);
+  background-color: ${baseCSS.backGroundColor};
   li {
     list-style-type: none;
   }
@@ -17,11 +18,11 @@ const contactList = css`
 
 const contactList_twitter_github = css`
   padding-right: 10px;
-  color: rgb(238, 242, 245);
+  color: ${baseCSS.headFooterColor};
 `;
 
 const contactList_facebook = css`
-  color: rgb(238, 242, 245);
+  color: ${baseCSS.headFooterColor};
 `;
 
 const howToContact = css`
@@ -32,7 +33,7 @@ const copyright = css`
   text-align: center;
   padding: 20px 0;
   font-size: 0.9rem;
-  color: rgb(238, 242, 245);
+  color: ${baseCSS.headFooterColor};
 `;
 
 function Footer() {

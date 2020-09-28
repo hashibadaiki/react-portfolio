@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 import profile_picture from "./images/profile.jpg";
+import { baseCSS } from "./Const.js";
 
 const basicStyle = css`
   width: 80%;
@@ -14,13 +15,13 @@ const basicStyle = css`
 const profile__title = css`
   font-size: 3rem;
   padding-bottom: 20px;
-  font-family: "Gill Sans", sans-serif;
+  font-family: ${baseCSS.englishFont};
 `;
 
 const profileList = css`
   font-size: 1.1rem;
   padding-bottom: 20px;
-  font-family: "Gill Sans", sans-serif;
+  font-family: ${baseCSS.englishFont};
 `;
 
 const profileList__img = css`
@@ -46,8 +47,8 @@ const profileList__aboutMe = css`
 `;
 
 const profileList__details = css`
-  color: rgb(20, 19, 19);
-  font-family: "Gill Sans", sans-serif;
+  color: ${baseCSS.titleColor};
+  font-family: ${baseCSS.englishFont};
   font-size: 1.5rem;
   font-weight: bold;
   margin: 10px 0;

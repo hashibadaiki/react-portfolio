@@ -9,7 +9,6 @@ const hero__image = css`
   background-position: center;
   height: 600px;
   width: 100%;
-  max-width: 1280px;
   z-index: 2;
   position: relative;
 `;
@@ -19,15 +18,9 @@ const hero__imageBack = css`
     rgba(207, 22, 22, 0),
     rgba(240, 236, 236, 0.795) 90%
   );
-  max-width: 1280px;
   height: 300px;
   background-position: center;
   z-index: 10;
-`;
-
-const titleEnclose = css`
-  // display: flex;
-  // flex-wrap: nowrap;
 `;
 
 const hero__title__pc = css`
@@ -43,7 +36,7 @@ function HeroImg() {
   return (
     <div css={hero__image} class="hero__image">
       <div css={hero__imageBack} class="hero__image--backColor">
-        <div css={titleEnclose} class="titleEnclose">
+        <div class="titleEnclose">
           <h1 css={hero__title__pc} class="hero__title__pc">
             <img
               src={title_image}
