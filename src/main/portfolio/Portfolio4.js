@@ -95,93 +95,23 @@ const portfolioList_card_link = css`
 
 function Portfolio4() {
   return (
-    <section css={basicStyle} class="portfolio basicStyle position-now">
-      <h2 css={portfolio__title} class="portfolio__title" id="goPortfolio">
-        My portfolio
-      </h2>
-      <ul css={portfolioList} class="portfolioList">
-        <a
-          class="portfolioList_card_link"
-          css={portfolioList_card_link}
-          href="https://minsyuku-example.netlify.com/index.html"
+    <a class="portfolioList_card_link" css={portfolioList_card_link}>
+      <li css={portfolioList_card} class="portfolioList__comingSoon">
+        <h3
+          css={[portfolioList_card_title]}
+          class="portfolioList__comingSoon__title comingSoonWhite"
         >
-          <li css={portfolioList_card} class="portfolioList__minsyuku">
-            <h3
-              css={[portfolioList_card_title]}
-              class="portfolioList__minsyuku__title minsyukuWhite"
-            >
-              民宿(擬似サイト)
-            </h3>
-            <span class="minsyukuWhite">学習20日で制作</span>
-            <p
-              css={[portfolioList_card_text]}
-              class="portfolioList__minsyuku__text minsyukuWhite"
-            >
-              架空の民宿をイメージして制作したWebsiteです。
-            </p>
-          </li>
-        </a>
-        <a
-          class="portfolioList_card_link"
-          css={portfolioList_card_link}
-          href="https://baanportfolio.netlify.com/"
+          API連携
+        </h3>
+        <span class="comingSoonWhite">学習60日目から作成中</span>
+        <p
+          css={[portfolioList_card_text]}
+          class="portfolioList__comingSoon__text comingSoonWhite"
         >
-          <li css={portfolioList_card} class="portfolioList__firstPortfolio">
-            <h3
-              css={[portfolioList_card_title]}
-              class="portfolioList__firstPortfolio__title firstPortfolioWhite"
-            >
-              Portfolio(first)
-            </h3>
-            <span class="firstPortfolioWhite">学習50日で制作</span>
-            <p
-              css={[portfolioList_card_text]}
-              class="portfolioList__firstPortfolio__text firstPortfolioWhite"
-            >
-              初めて制作したポートフォリオサイトです。
-            </p>
-          </li>
-        </a>
-        <a
-          class="portfolioList_card_link"
-          css={portfolioList_card_link}
-          href="https://qiita.com/baan_nasebanaru"
-        >
-          <li css={portfolioList_card} class="portfolioList__Qiita">
-            <h3
-              css={[portfolioList_card_title]}
-              class="portfolioList__Qiita__title qiitaWhite"
-            >
-              制作記事
-            </h3>
-            <span class="qiitaWhite">学習20日目から継続</span>
-            <p
-              css={[portfolioList_card_text]}
-              class="portfolioList__Qiita__text qiitaWhite"
-            >
-              過去に執筆した記事の一覧です。
-            </p>
-          </li>
-        </a>
-        <a class="portfolioList_card_link" css={portfolioList_card_link}>
-          <li css={portfolioList_card} class="portfolioList__comingSoon">
-            <h3
-              css={[portfolioList_card_title]}
-              class="portfolioList__comingSoon__title comingSoonWhite"
-            >
-              API連携
-            </h3>
-            <span class="comingSoonWhite">学習60日目から作成中</span>
-            <p
-              css={[portfolioList_card_text]}
-              class="portfolioList__comingSoon__text comingSoonWhite"
-            >
-              現在制作中
-            </p>
-          </li>
-        </a>
-      </ul>
-    </section>
+          現在制作中
+        </p>
+      </li>
+    </a>
   );
 }
 
