@@ -2,7 +2,7 @@
 import { css, jsx } from "@emotion/core";
 import { baseCSS } from "Const";
 
-const portfolioList_card = css`
+const portfolioListCard = css`
   height: 150px;
   margin: 0;
   padding: 10px;
@@ -53,20 +53,20 @@ const portfolioList_card = css`
   }
 `;
 
-const portfolioList_card_title = css`
+const portfolioListCardTitle = css`
   font-family: ${baseCSS.englishFont};
   font-size: 1.5rem;
   padding-bottom: 5px;
   color: ${baseCSS.pickUpColor};
 `;
 
-const portfolioList_card_text = css`
+const portfolioListCardText = css`
   font-size: 1.5rem;
   padding-top: 10px;
   color: ${baseCSS.pickUpColor};
 `;
 
-const portfolioList_card_link = css`
+const portfolioListCardLink = css`
   width: 45%;
   margin: 15px;
 `;
@@ -74,24 +74,14 @@ const portfolioList_card_link = css`
 function Portfolio3() {
   return (
     <a
-      class="portfolioList_card_link"
-      css={portfolioList_card_link}
+      class="portfolioListCardLink"
+      css={portfolioListCardLink}
       href="https://qiita.com/baan_nasebanaru"
     >
-      <div css={portfolioList_card} class="portfolioList__Qiita">
-        <h3
-          css={[portfolioList_card_title]}
-          class="portfolioList__Qiita__title qiitaWhite"
-        >
-          制作記事
-        </h3>
+      <div css={portfolioListCard}>
+        <h3 css={portfolioListCardTitle}>制作記事</h3>
         <span class="qiitaWhite">学習20日目から継続</span>
-        <p
-          css={[portfolioList_card_text]}
-          class="portfolioList__Qiita__text qiitaWhite"
-        >
-          過去に執筆した記事の一覧です。
-        </p>
+        <p css={portfolioListCardText}>過去に執筆した記事の一覧です。</p>
       </div>
     </a>
   );

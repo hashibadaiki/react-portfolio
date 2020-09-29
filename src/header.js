@@ -28,7 +28,7 @@ const navigationListStyle = css`
   list-style-type: none;
 `;
 
-const navigationList__btn = css`
+const navigationListBtn = css`
   display: inline-block;
   cursor: pointer;
   font-family: ${baseCSS.englishFont};
@@ -37,40 +37,24 @@ const navigationList__btn = css`
 function Header() {
   return (
     <nav css={navigationWide} class="navigation wide">
-      <ul css={navigationList} class="navigationList" id="navigationWide__js">
-        <li css={navigationListStyle} class="navigationList__top">
-          <div
-            css={navigationList__btn}
-            class="navigationList__btn"
-            id="topJs__wide"
-          >
+      <ul css={navigationList} class="navigationList">
+        <li css={navigationListStyle}>
+          <div css={navigationListBtn} class="navigationListBtn">
             TOP
           </div>
         </li>
-        <li css={navigationListStyle} class="navigationList__portfolio">
-          <div
-            css={navigationList__btn}
-            class="navigationList__btn"
-            id="portfolioJs__wide"
-          >
+        <li css={navigationListStyle}>
+          <div css={navigationListBtn} class="navigationListBtn">
             My portfolio
           </div>
         </li>
-        <li css={navigationListStyle} class="navigationList__profile">
-          <div
-            css={navigationList__btn}
-            class="navigationList__btn"
-            id="aboutJs__wide"
-          >
+        <li css={navigationListStyle}>
+          <div css={navigationListBtn} class="navigationListBtn">
             About me
           </div>
         </li>
-        <li css={navigationListStyle} class="navigationList__contact">
-          <div
-            css={navigationList__btn}
-            class="navigationList__btn"
-            id="contactJs__wide"
-          >
+        <li css={navigationListStyle}>
+          <div css={navigationListBtn} class="navigationListBtn">
             and more...
           </div>
         </li>

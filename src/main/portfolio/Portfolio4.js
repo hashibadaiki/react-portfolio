@@ -2,7 +2,7 @@
 import { css, jsx } from "@emotion/core";
 import { baseCSS } from "Const";
 
-const portfolioList_card = css`
+const portfolioListCard = css`
   height: 150px;
   margin: 0;
   padding: 10px;
@@ -16,41 +16,31 @@ const portfolioList_card = css`
   transition: 0.8s linear;
 `;
 
-const portfolioList_card_title = css`
+const portfolioListCardTitle = css`
   font-family: ${baseCSS.englishFont};
   font-size: 1.5rem;
   padding-bottom: 5px;
   color: ${baseCSS.pickUpColor};
 `;
 
-const portfolioList_card_text = css`
+const portfolioListCardText = css`
   font-size: 1.5rem;
   padding-top: 10px;
   color: ${baseCSS.pickUpColor};
 `;
 
-const portfolioList_card_link = css`
+const portfolioListCardLink = css`
   width: 45%;
   margin: 15px;
 `;
 
 function Portfolio4() {
   return (
-    <div class="portfolioList_card_link" css={portfolioList_card_link}>
-      <div css={portfolioList_card} class="portfolioList__comingSoon">
-        <h3
-          css={[portfolioList_card_title]}
-          class="portfolioList__comingSoon__title comingSoonWhite"
-        >
-          API連携
-        </h3>
+    <div class="portfolioListCardLink" css={portfolioListCardLink}>
+      <div css={portfolioListCard}>
+        <h3 css={[portfolioListCardTitle]}>API連携</h3>
         <span class="comingSoonWhite">学習60日目から作成中</span>
-        <p
-          css={[portfolioList_card_text]}
-          class="portfolioList__comingSoon__text comingSoonWhite"
-        >
-          現在制作中
-        </p>
+        <p css={[portfolioListCardText]}>現在制作中</p>
       </div>
     </div>
   );

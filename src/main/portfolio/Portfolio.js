@@ -12,7 +12,7 @@ const basicStyle = css`
   padding: 30px 0;
 `;
 
-const portfolio__title = css`
+const portfolioTitle = css`
   font-size: 3rem;
   padding: 30px 0;
   font-family: ${baseCSS.englishFont};
@@ -29,7 +29,7 @@ function Portfolio() {
   return (
     <div>
       <section css={basicStyle} class="portfolio basicStyle position-now">
-        <h2 css={portfolio__title} class="portfolio__title" id="goPortfolio">
+        <h2 css={portfolioTitle} class="portfolioTitle" id="goPortfolio">
           My portfolio
         </h2>
         <div css={portfolioList} class="portfolioList">

@@ -1,10 +1,10 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
-import hero_image from "images/heroImage.jpg";
-import title_image from "images/title.png";
+import heroImage from "images/heroImage.jpg";
+import titleImage from "images/title.png";
 
-const hero__image = css`
-  background-image: url(${hero_image});
+const heroImageStyle = css`
+  background-image: url(${heroImage});
   background-size: cover;
   background-position: center;
   height: 600px;
@@ -12,7 +12,7 @@ const hero__image = css`
   z-index: 2;
   position: relative;
 `;
-const hero__imageBack = css`
+const heroImageBack = css`
   background: linear-gradient(
     to top,
     rgba(207, 22, 22, 0),
@@ -23,7 +23,7 @@ const hero__imageBack = css`
   z-index: 10;
 `;
 
-const hero__title__pc = css`
+const heroTitle = css`
   padding: 100px 40px;
 `;
 
@@ -34,12 +34,12 @@ const siteTitle = css`
 
 function HeroImg() {
   return (
-    <div css={hero__image} class="hero__image">
-      <div css={hero__imageBack} class="hero__image--backColor">
+    <div css={heroImageStyle}>
+      <div css={heroImageBack}>
         <div class="titleEnclose">
-          <h1 css={hero__title__pc} class="hero__title__pc">
+          <h1 css={heroTitle} class="heroTitle">
             <img
-              src={title_image}
+              src={titleImage}
               alt="React Replace"
               class="siteTitle"
               css={siteTitle}

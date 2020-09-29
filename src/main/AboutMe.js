@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
-import profile_picture from "images/profile.jpg";
+import profilePicture from "images/profile.jpg";
 import { baseCSS } from "Const";
 
 const breakpoints = [768, 992, 1200];
@@ -16,7 +16,7 @@ const basicStyle = css`
   }
 `;
 
-const profile__title = css`
+const profileTitle = css`
   font-size: 3rem;
   padding-bottom: 20px;
   font-family: ${baseCSS.englishFont};
@@ -28,7 +28,7 @@ const profileList = css`
   font-family: ${baseCSS.englishFont};
 `;
 
-const profileList__img = css`
+const profileListImg = css`
   text-align: center;
   height: 350px;
   background-color: rgba(230, 237, 238, 0.315);
@@ -38,19 +38,19 @@ const profileList__img = css`
   margin-right: 15px;
 `;
 
-const profileList__imgCurrent = css`
+const profileListImgCurrent = css`
   border-radius: 3px;
   height: 350px;
 `;
 
-const profileList__aboutMe = css`
+const profileListAboutMe = css`
   width: 35%;
   display: inline-block;
   margin: 0;
   vertical-align: top;
 `;
 
-const profileList__details = css`
+const profileListDetails = css`
   color: ${baseCSS.titleColor};
   font-family: ${baseCSS.englishFont};
   font-size: 1.5rem;
@@ -58,7 +58,7 @@ const profileList__details = css`
   margin: 10px 0;
 `;
 
-const profileList__workExperience = css`
+const profileListWorkExperience = css`
   margin: 30px 0;
 `;
 
@@ -105,31 +105,29 @@ function AboutMe() {
     <section css={basicStyle} class="profile basicStyle position-now">
       <h2
         css={
-          (profile__title,
+          (profileTitle,
           {
             [mq[0]]: {
               fontSize: "4rem",
             },
           })
         }
-        class="profile__title"
+        class="profileTitle"
         id="goAbout"
       >
         About me
       </h2>
       <ul css={profileList} class="profileList">
-        <li css={profileList__img} class="profileList__img">
+        <li css={profileListImg} class="profileListImg">
           <img
-            src={profile_picture}
-            css={profileList__imgCurrent}
+            src={profilePicture}
+            css={profileListImgCurrent}
             alt="ばーんの写真"
-            class="profileList__img--current"
+            class="profileListImg--current"
           />
         </li>
-        <li css={profileList__aboutMe} class="profileList__aboutMe">
-          <p css={profileList__details} class="profileList__aboutMe__name">
-            名前：ばーん
-          </p>
+        <li css={profileListAboutMe} class="profileListAboutMe">
+          <p css={profileListDetails}>名前：ばーん</p>
           <div css={profileText} class="profileText">
             大阪出身。既婚者。現在転職に向けてプログラミング学習中(2019.10〜)。副業も視野に活動中。
             <br />
@@ -149,16 +147,8 @@ function AboutMe() {
             </p>
           </div>
         </li>
-        <li
-          css={profileList__workExperience}
-          class="profileList__workExperience"
-        >
-          <p
-            css={profileList__details}
-            class="profileList__workExperience__index  position-now"
-          >
-            経歴
-          </p>
+        <li css={profileListWorkExperience} class="profileListWorkExperience">
+          <p css={profileListDetails}>経歴</p>
           <div css={profileText} class="profileText">
             新卒でパチンコ店大手に就職。管理職6年経験。組合員数500人を超える組合長を経験。運営に3年間携わり視座を体得。
             <br />

@@ -16,12 +16,12 @@ const contactList = css`
   font-size: 1.5rem;
 `;
 
-const contactList_twitter_github = css`
+const contactListTwitterGithub = css`
   padding-right: 10px;
   color: ${baseCSS.headFooterColor};
 `;
 
-const contactList_facebook = css`
+const contactListFacebook = css`
   color: ${baseCSS.headFooterColor};
 `;
 
@@ -42,17 +42,17 @@ function Footer() {
       <address css={howToContact} class="howToContact">
         <ul css={contactList} class="contactList">
           <a href="https://twitter.com/baan_nasebanaru">
-            <li css={contactList_twitter_github} class="contactList__twitter">
+            <li css={contactListTwitterGithub}>
               <i class="fab fa-twitter-square fa-2x"></i>
             </li>
           </a>
           <a href="https://github.com/hashibadaiki">
-            <li css={contactList_twitter_github} class="contactList__github">
+            <li css={contactListTwitterGithub}>
               <i class="fab fa-github-square fa-2x"></i>
             </li>
           </a>
           <a href="https://www.facebook.com/daiki.hasiba">
-            <li css={contactList_facebook} class="contactList__facebook">
+            <li css={contactListFacebook}>
               <i class="fab fa-facebook-square fa-2x"></i>
             </li>
           </a>
