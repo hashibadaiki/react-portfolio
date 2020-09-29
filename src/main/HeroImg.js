@@ -36,14 +36,9 @@ function HeroImg() {
   return (
     <div css={heroImageStyle}>
       <div css={heroImageBack}>
-        <div class="titleEnclose">
-          <h1 css={heroTitle} class="heroTitle">
-            <img
-              src={titleImage}
-              alt="React Replace"
-              class="siteTitle"
-              css={siteTitle}
-            />
+        <div>
+          <h1 css={heroTitle}>
+            <img src={titleImage} alt="React Replace" css={siteTitle} />
           </h1>
         </div>
       </div>

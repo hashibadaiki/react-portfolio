@@ -28,11 +28,9 @@ const portfolioList = css`
 function Portfolio() {
   return (
     <div>
-      <section css={basicStyle} class="portfolio basicStyle position-now">
-        <h2 css={portfolioTitle} class="portfolioTitle" id="goPortfolio">
-          My portfolio
-        </h2>
-        <div css={portfolioList} class="portfolioList">
+      <section css={basicStyle}>
+        <h2 css={portfolioTitle}>My portfolio</h2>
+        <div css={portfolioList}>
           <Portfolio1 />
           <Portfolio2 />
           <Portfolio3 />

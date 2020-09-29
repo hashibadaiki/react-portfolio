@@ -36,27 +36,19 @@ const navigationListBtn = css`
 
 function Header() {
   return (
-    <nav css={navigationWide} class="navigation wide">
-      <ul css={navigationList} class="navigationList">
+    <nav css={navigationWide}>
+      <ul css={navigationList}>
         <li css={navigationListStyle}>
-          <div css={navigationListBtn} class="navigationListBtn">
-            TOP
-          </div>
+          <div css={navigationListBtn}>TOP</div>
         </li>
         <li css={navigationListStyle}>
-          <div css={navigationListBtn} class="navigationListBtn">
-            My portfolio
-          </div>
+          <div css={navigationListBtn}>My portfolio</div>
         </li>
         <li css={navigationListStyle}>
-          <div css={navigationListBtn} class="navigationListBtn">
-            About me
-          </div>
+          <div css={navigationListBtn}>About me</div>
         </li>
         <li css={navigationListStyle}>
-          <div css={navigationListBtn} class="navigationListBtn">
-            and more...
-          </div>
+          <div css={navigationListBtn}>and more...</div>
         </li>
       </ul>
     </nav>

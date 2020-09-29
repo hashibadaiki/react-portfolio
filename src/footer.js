@@ -38,9 +38,9 @@ const copyright = css`
 
 function Footer() {
   return (
-    <footer css={footer} class="contact footer">
-      <address css={howToContact} class="howToContact">
-        <ul css={contactList} class="contactList">
+    <footer css={footer}>
+      <address css={howToContact}>
+        <ul css={contactList}>
           <a href="https://twitter.com/baan_nasebanaru">
             <li css={contactListTwitterGithub}>
               <i class="fab fa-twitter-square fa-2x"></i>
@@ -58,7 +58,7 @@ function Footer() {
           </a>
         </ul>
       </address>
-      <p css={copyright} class="copyright">
+      <p css={copyright}>
         <small>&copy; 2019-2020 Baan's portfolio</small>
       </p>
     </footer>

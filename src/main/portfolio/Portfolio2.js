@@ -73,14 +73,10 @@ const portfolioListCardLink = css`
 
 function Portfolio2() {
   return (
-    <a
-      class="portfolioListCardLink"
-      css={portfolioListCardLink}
-      href="https://baanportfolio.netlify.com/"
-    >
+    <a css={portfolioListCardLink} href="https://baanportfolio.netlify.com/">
       <div css={portfolioListCard}>
         <h3 css={[portfolioListCardTitle]}>Portfolio(first)</h3>
-        <span class="firstPortfolioWhite">学習50日で制作</span>
+        <span>学習50日で制作</span>
         <p css={[portfolioListCardText]}>
           初めて制作したポートフォリオサイトです。
         </p>

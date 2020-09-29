@@ -102,7 +102,7 @@ const contactTwitter = css`
 
 function AboutMe() {
   return (
-    <section css={basicStyle} class="profile basicStyle position-now">
+    <section css={basicStyle}>
       <h2
         css={
           (profileTitle,
@@ -112,33 +112,29 @@ function AboutMe() {
             },
           })
         }
-        class="profileTitle"
-        id="goAbout"
       >
         About me
       </h2>
-      <ul css={profileList} class="profileList">
-        <li css={profileListImg} class="profileListImg">
+      <ul css={profileList}>
+        <li css={profileListImg}>
           <img
             src={profilePicture}
             css={profileListImgCurrent}
             alt="ばーんの写真"
-            class="profileListImg--current"
           />
         </li>
-        <li css={profileListAboutMe} class="profileListAboutMe">
+        <li css={profileListAboutMe}>
           <p css={profileListDetails}>名前：ばーん</p>
-          <div css={profileText} class="profileText">
+          <div css={profileText}>
             大阪出身。既婚者。現在転職に向けてプログラミング学習中(2019.10〜)。副業も視野に活動中。
             <br />
             HTML,CSS,JSを学習。今後はデザインとJSの学習を進めWebサイト制作に取り組んでいこうと考えています。
-            <p css={addProfile} class="addProfile">
+            <p css={addProfile}>
               現在は実務経験を積んで成長していくことを最優先に考えています。簡単なお仕事でもご連絡頂ければ幸いです。
               <br />
               <span>
                 <a
                   href="https://twitter.com/baan_nasebanaru"
-                  class="contactTwitter"
                   css={contactTwitter}
                 >
                   ※ご連絡はTwitterからお願いします
@@ -147,14 +143,14 @@ function AboutMe() {
             </p>
           </div>
         </li>
-        <li css={profileListWorkExperience} class="profileListWorkExperience">
+        <li css={profileListWorkExperience}>
           <p css={profileListDetails}>経歴</p>
-          <div css={profileText} class="profileText">
+          <div css={profileText}>
             新卒でパチンコ店大手に就職。管理職6年経験。組合員数500人を超える組合長を経験。運営に3年間携わり視座を体得。
             <br />
             特に対人の洞察力が優れており、安定した組織運営で評価を獲得。
             <br />
-            <p css={addProfile} class="addProfile">
+            <p css={addProfile}>
               ・数値分析と人材育成により、商品廃棄率0％の達成。また、前年比売上120％達成(10ヶ月間)
               <br />
               ・新店舗の立ち上げ経験。初年度目標客数150％の達成

@@ -36,10 +36,10 @@ const portfolioListCardLink = css`
 
 function Portfolio4() {
   return (
-    <div class="portfolioListCardLink" css={portfolioListCardLink}>
+    <div css={portfolioListCardLink}>
       <div css={portfolioListCard}>
         <h3 css={[portfolioListCardTitle]}>API連携</h3>
-        <span class="comingSoonWhite">学習60日目から作成中</span>
+        <span>学習60日目から作成中</span>
         <p css={[portfolioListCardText]}>現在制作中</p>
       </div>
     </div>
