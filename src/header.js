@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
-import { baseCSS } from "./Const.js";
+import { baseCSS } from "Const";
 
 const navigationWide = css`
   display: inline-block;
