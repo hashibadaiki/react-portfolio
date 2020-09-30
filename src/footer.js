@@ -4,9 +4,6 @@ import { baseCSS } from "Const";
 
 const footer = css`
   background-color: ${baseCSS.backGroundColor};
-  li {
-    list-style-type: none;
-  }
 `;
 
 const contactList = css`
@@ -40,23 +37,23 @@ function Footer() {
   return (
     <footer css={footer}>
       <address css={howToContact}>
-        <ul css={contactList}>
+        <div css={contactList}>
           <a href="https://twitter.com/baan_nasebanaru">
-            <li css={contactListTwitterGithub}>
+            <div css={contactListTwitterGithub}>
               <i class="fab fa-twitter-square fa-2x"></i>
-            </li>
+            </div>
           </a>
           <a href="https://github.com/hashibadaiki">
-            <li css={contactListTwitterGithub}>
+            <div css={contactListTwitterGithub}>
               <i class="fab fa-github-square fa-2x"></i>
-            </li>
+            </div>
           </a>
           <a href="https://www.facebook.com/daiki.hasiba">
-            <li css={contactListFacebook}>
+            <div css={contactListFacebook}>
               <i class="fab fa-facebook-square fa-2x"></i>
-            </li>
+            </div>
           </a>
-        </ul>
+        </div>
       </address>
       <p css={copyright}>
         <small>&copy; 2019-2020 Baan's portfolio</small>
