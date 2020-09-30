@@ -38,7 +38,11 @@ function HeroImg() {
       <div css={heroImageBack}>
         <div>
           <h1 css={heroTitle}>
-            <img src={titleImage} alt="React Replace" css={siteTitle} />
+            <img
+              src={titleImage}
+              alt="React Replace(タイトル)"
+              css={siteTitle}
+            />
           </h1>
         </div>
       </div>

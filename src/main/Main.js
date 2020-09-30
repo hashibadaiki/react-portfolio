@@ -1,7 +1,7 @@
 import React from "react";
-import HeroImg from "./HeroImg";
-import Portfolio from "./portfolio/Portfolio";
-import AboutMe from "./AboutMe";
+import HeroImg from "main/HeroImg";
+import Portfolio from "main/portfolio/Portfolio";
+import AboutMe from "main/aboutMe/AboutMe";
 
 function Main() {
   return (
