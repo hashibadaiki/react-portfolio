@@ -34,7 +34,7 @@ const navigationListBtn = css`
   font-family: ${baseCSS.englishFont};
 `;
 
-function Header() {
+export const Header = () => {
   return (
     <nav css={navigationWide}>
       <ul css={navigationList}>
@@ -53,6 +53,4 @@ function Header() {
       </ul>
     </nav>
   );
-}
-
-export default Header;
+};

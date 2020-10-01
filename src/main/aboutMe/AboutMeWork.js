@@ -19,7 +19,7 @@ const profileText = css`
   line-height: 2;
 `;
 
-function AboutMeWork() {
+export const AboutMeWork = () => {
   return (
     <div css={profileListWorkExperience}>
       <h3 css={profileListDetails}>経歴</h3>
@@ -31,6 +31,4 @@ function AboutMeWork() {
       </div>
     </div>
   );
-}
-
-export default AboutMeWork;
+};

@@ -1,10 +1,10 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 import { baseCSS } from "Const";
-import Portfolio1 from "main/portfolio/Portfolio1";
-import Portfolio2 from "main/portfolio/Portfolio2";
-import Portfolio3 from "main/portfolio/Portfolio3";
-import Portfolio4 from "main/portfolio/Portfolio4";
+import { Portfolio1 } from "main/portfolio/Portfolio1";
+import { Portfolio2 } from "main/portfolio/Portfolio2";
+import { Portfolio3 } from "main/portfolio/Portfolio3";
+import { Portfolio4 } from "main/portfolio/Portfolio4";
 
 const basicStyle = css`
   width: 80%;
@@ -25,7 +25,7 @@ const portfolioList = css`
   justify-content: center;
 `;
 
-function Portfolio() {
+export const Portfolio = () => {
   return (
     <div>
       <section css={basicStyle}>
@@ -39,6 +39,4 @@ function Portfolio() {
       </section>
     </div>
   );
-}
-
-export default Portfolio;
+};

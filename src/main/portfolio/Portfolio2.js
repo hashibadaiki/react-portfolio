@@ -71,7 +71,7 @@ const portfolioListCardLink = css`
   margin: 15px;
 `;
 
-function Portfolio2() {
+export const Portfolio2 = () => {
   return (
     <a css={portfolioListCardLink} href="https://baanportfolio.netlify.com/">
       <div css={portfolioListCard}>
@@ -83,6 +83,4 @@ function Portfolio2() {
       </div>
     </a>
   );
-}
-
-export default Portfolio2;
+};

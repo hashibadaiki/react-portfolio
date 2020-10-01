@@ -71,7 +71,7 @@ const portfolioListCardLink = css`
   margin: 15px;
 `;
 
-function Portfolio3() {
+export const Portfolio3 = () => {
   return (
     <a css={portfolioListCardLink} href="https://qiita.com/baan_nasebanaru">
       <div css={portfolioListCard}>
@@ -81,6 +81,4 @@ function Portfolio3() {
       </div>
     </a>
   );
-}
-
-export default Portfolio3;
+};

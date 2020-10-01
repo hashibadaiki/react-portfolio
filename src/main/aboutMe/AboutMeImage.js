@@ -18,12 +18,10 @@ const imageSize = css`
   max-height: 350px;
 `;
 
-function AboutMeImage() {
+export const AboutMeImage = () => {
   return (
     <div css={profileListImage}>
       <img src={profilePicture} css={imageSize} alt="ばーんの写真" />
     </div>
   );
-}
-
-export default AboutMeImage;
+};

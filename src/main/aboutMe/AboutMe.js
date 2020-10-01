@@ -1,9 +1,9 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 import { baseCSS } from "Const";
-import AboutMeProfile from "main/aboutMe/AboutMeProfile";
-import AboutMeImage from "main/aboutMe/AboutMeImage";
-import AboutMeWork from "main/aboutMe/AboutMeWork";
+import { AboutMeProfile } from "main/aboutMe/AboutMeProfile";
+import { AboutMeImage } from "main/aboutMe/AboutMeImage";
+import { AboutMeWork } from "main/aboutMe/AboutMeWork";
 
 const basicStyle = css`
   width: 80%;
@@ -23,7 +23,7 @@ const profileList = css`
   font-family: ${baseCSS.englishFont};
 `;
 
-function AboutMe() {
+export const AboutMe = () => {
   return (
     <section css={basicStyle}>
       <h2 css={profileTitle}>About me</h2>
@@ -34,6 +34,4 @@ function AboutMe() {
       </div>
     </section>
   );
-}
-
-export default AboutMe;
+};

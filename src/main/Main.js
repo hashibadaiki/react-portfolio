@@ -1,16 +1,14 @@
 import React from "react";
-import HeroImg from "main/HeroImg";
-import Portfolio from "main/portfolio/Portfolio";
-import AboutMe from "main/aboutMe/AboutMe";
+import { HeroImage } from "main/HeroImg";
+import { Portfolio } from "main/portfolio/Portfolio";
+import { AboutMe } from "main/aboutMe/AboutMe";
 
-function Main() {
+export const Main = () => {
   return (
     <div>
-      <HeroImg />
+      <HeroImage />
       <Portfolio />
       <AboutMe />
     </div>
   );
-}
-
-export default Main;
+};

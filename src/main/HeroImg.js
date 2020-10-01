@@ -32,7 +32,7 @@ const siteTitle = css`
   height: 150px;
 `;
 
-function HeroImg() {
+export const HeroImage = () => {
   return (
     <div css={heroImageStyle}>
       <div css={heroImageBack}>
@@ -48,6 +48,4 @@ function HeroImg() {
       </div>
     </div>
   );
-}
-
-export default HeroImg;
+};

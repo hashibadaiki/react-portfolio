@@ -71,7 +71,7 @@ const portfolioListCardLink = css`
   margin: 15px;
 `;
 
-function Portfolio1() {
+export const Portfolio1 = () => {
   return (
     <a
       css={portfolioListCardLink}
@@ -86,6 +86,4 @@ function Portfolio1() {
       </div>
     </a>
   );
-}
-
-export default Portfolio1;
+};

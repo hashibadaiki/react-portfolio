@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Header from "Header";
-import Main from "main/Main";
-import Footer from "Footer";
+import { Header } from "Header";
+import { Main } from "main/Main";
+import { Footer } from "Footer";
 import * as serviceWorker from "serviceWorker";
 import { Global, css } from "@emotion/core";
 

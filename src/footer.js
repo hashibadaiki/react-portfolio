@@ -33,7 +33,7 @@ const copyright = css`
   color: ${baseCSS.headFooterColor};
 `;
 
-function Footer() {
+export const Footer = () => {
   return (
     <footer css={footer}>
       <address css={howToContact}>
@@ -60,6 +60,4 @@ function Footer() {
       </p>
     </footer>
   );
-}
-
-export default Footer;
+};

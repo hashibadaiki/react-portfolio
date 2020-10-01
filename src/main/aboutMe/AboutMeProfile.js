@@ -23,7 +23,7 @@ const profileText = css`
   line-height: 2;
 `;
 
-function AboutMeProfile() {
+export const AboutMeProfile = () => {
   return (
     <div css={profileListAboutMe}>
       <h3 css={profileListDetails}>名前：ばーん</h3>
@@ -37,6 +37,4 @@ function AboutMeProfile() {
       </div>
     </div>
   );
-}
-
-export default AboutMeProfile;
+};
