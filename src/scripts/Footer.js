@@ -1,11 +1,9 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
+import { baseCSS } from "src/scripts/Const";
 
 const footer = css`
-  background-color: rgba(12, 12, 12, 0.925);
-  li {
-    list-style-type: none;
-  }
+  background-color: ${baseCSS.backGroundColor};
 `;
 
 const contactList = css`
@@ -15,13 +13,13 @@ const contactList = css`
   font-size: 1.5rem;
 `;
 
-const contactList_twitter_github = css`
+const contactListTwitterGithub = css`
   padding-right: 10px;
-  color: rgb(238, 242, 245);
+  color: ${baseCSS.headFooterColor};
 `;
 
-const contactList_facebook = css`
-  color: rgb(238, 242, 245);
+const contactListFacebook = css`
+  color: ${baseCSS.headFooterColor};
 `;
 
 const howToContact = css`
@@ -32,36 +30,34 @@ const copyright = css`
   text-align: center;
   padding: 20px 0;
   font-size: 0.9rem;
-  color: rgb(238, 242, 245);
+  color: ${baseCSS.headFooterColor};
 `;
 
-function Footer() {
+export const Footer = () => {
   return (
-    <footer css={footer} class="contact footer">
-      <address css={howToContact} class="howToContact">
-        <ul css={contactList} class="contactList">
+    <footer css={footer}>
+      <address css={howToContact}>
+        <div css={contactList}>
           <a href="https://twitter.com/baan_nasebanaru">
-            <li css={contactList_twitter_github} class="contactList__twitter">
+            <div css={contactListTwitterGithub}>
               <i class="fab fa-twitter-square fa-2x"></i>
-            </li>
+            </div>
           </a>
           <a href="https://github.com/hashibadaiki">
-            <li css={contactList_twitter_github} class="contactList__github">
+            <div css={contactListTwitterGithub}>
               <i class="fab fa-github-square fa-2x"></i>
-            </li>
+            </div>
           </a>
           <a href="https://www.facebook.com/daiki.hasiba">
-            <li css={contactList_facebook} class="contactList__facebook">
+            <div css={contactListFacebook}>
               <i class="fab fa-facebook-square fa-2x"></i>
-            </li>
+            </div>
           </a>
-        </ul>
+        </div>
       </address>
-      <p css={copyright} class="copyright">
+      <p css={copyright}>
         <small>&copy; 2019-2020 Baan's portfolio</small>
       </p>
     </footer>
   );
-}
-
-export default Footer;
+};
