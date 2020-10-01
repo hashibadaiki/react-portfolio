@@ -1,10 +1,10 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
-import { baseCSS } from "Const";
-import { Portfolio1 } from "main/portfolio/Portfolio1";
-import { Portfolio2 } from "main/portfolio/Portfolio2";
-import { Portfolio3 } from "main/portfolio/Portfolio3";
-import { Portfolio4 } from "main/portfolio/Portfolio4";
+import { baseCSS } from "src/scripts/Const";
+import { Portfolio1 } from "src/scripts/main/portfolio/Portfolio1";
+import { Portfolio2 } from "src/scripts/main/portfolio/Portfolio2";
+import { Portfolio3 } from "src/scripts/main/portfolio/Portfolio3";
+import { Portfolio4 } from "src/scripts/main/portfolio/Portfolio4";
 
 const basicStyle = css`
   width: 80%;

@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
-import { baseCSS } from "Const";
+import { baseCSS } from "src/scripts/Const";
 
 const portfolioListCard = css`
   height: 150px;
@@ -71,15 +71,13 @@ const portfolioListCardLink = css`
   margin: 15px;
 `;
 
-export const Portfolio2 = () => {
+export const Portfolio3 = () => {
   return (
-    <a css={portfolioListCardLink} href="https://baanportfolio.netlify.com/">
+    <a css={portfolioListCardLink} href="https://qiita.com/baan_nasebanaru">
       <div css={portfolioListCard}>
-        <h3 css={[portfolioListCardTitle]}>Portfolio(first)</h3>
-        <span>学習50日で制作</span>
-        <p css={[portfolioListCardText]}>
-          初めて制作したポートフォリオサイトです。
-        </p>
+        <h3 css={portfolioListCardTitle}>制作記事</h3>
+        <span>学習20日目から継続</span>
+        <p css={portfolioListCardText}>過去に執筆した記事の一覧です。</p>
       </div>
     </a>
   );

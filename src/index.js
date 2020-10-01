@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Header } from "Header";
-import { Main } from "main/Main";
-import { Footer } from "Footer";
-import * as serviceWorker from "serviceWorker";
+import { Header } from "src/scripts/Header";
+import { Main } from "src/scripts/main/Main";
+import { Footer } from "src/scripts/Footer";
+import * as serviceWorker from "src/serviceWorker";
 import { Global, css } from "@emotion/core";
 
 const resetCSS = css`

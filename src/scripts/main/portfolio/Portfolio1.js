@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
-import { baseCSS } from "Const";
+import { baseCSS } from "src/scripts/Const";
 
 const portfolioListCard = css`
   height: 150px;
@@ -71,13 +71,18 @@ const portfolioListCardLink = css`
   margin: 15px;
 `;
 
-export const Portfolio3 = () => {
+export const Portfolio1 = () => {
   return (
-    <a css={portfolioListCardLink} href="https://qiita.com/baan_nasebanaru">
+    <a
+      css={portfolioListCardLink}
+      href="https://minsyuku-example.netlify.com/index.html"
+    >
       <div css={portfolioListCard}>
-        <h3 css={portfolioListCardTitle}>制作記事</h3>
-        <span>学習20日目から継続</span>
-        <p css={portfolioListCardText}>過去に執筆した記事の一覧です。</p>
+        <h3 css={[portfolioListCardTitle]}>民宿(擬似サイト)</h3>
+        <span>学習20日で制作</span>
+        <p css={[portfolioListCardText]}>
+          架空の民宿をイメージして制作したWebsiteです。
+        </p>
       </div>
     </a>
   );

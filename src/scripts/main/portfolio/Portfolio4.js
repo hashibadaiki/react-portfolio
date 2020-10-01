@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
-import { baseCSS } from "Const";
+import { baseCSS } from "src/scripts/Const";
 
 const portfolioListCard = css`
   height: 150px;

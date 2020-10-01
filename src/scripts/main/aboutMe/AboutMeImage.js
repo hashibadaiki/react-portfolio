@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
-import profilePicture from "images/profile.jpg";
+import profilePicture from "src/images/profile.jpg";
 
 const profileListImage = css`
   text-align: center;

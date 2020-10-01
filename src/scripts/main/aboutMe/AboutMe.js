@@ -1,9 +1,9 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
-import { baseCSS } from "Const";
-import { AboutMeProfile } from "main/aboutMe/AboutMeProfile";
-import { AboutMeImage } from "main/aboutMe/AboutMeImage";
-import { AboutMeWork } from "main/aboutMe/AboutMeWork";
+import { baseCSS } from "src/scripts/Const";
+import { AboutMeProfile } from "src/scripts/main/aboutMe/AboutMeProfile";
+import { AboutMeImage } from "src/scripts/main/aboutMe/AboutMeImage";
+import { AboutMeWork } from "src/scripts/main/aboutMe/AboutMeWork";
 
 const basicStyle = css`
   width: 80%;

@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
-import { baseCSS } from "Const";
+import { baseCSS } from "src/scripts/Const";
 
 const portfolioListCard = css`
   height: 150px;
@@ -71,17 +71,14 @@ const portfolioListCardLink = css`
   margin: 15px;
 `;
 
-export const Portfolio1 = () => {
+export const Portfolio2 = () => {
   return (
-    <a
-      css={portfolioListCardLink}
-      href="https://minsyuku-example.netlify.com/index.html"
-    >
+    <a css={portfolioListCardLink} href="https://baanportfolio.netlify.com/">
       <div css={portfolioListCard}>
-        <h3 css={[portfolioListCardTitle]}>民宿(擬似サイト)</h3>
-        <span>学習20日で制作</span>
+        <h3 css={[portfolioListCardTitle]}>Portfolio(first)</h3>
+        <span>学習50日で制作</span>
         <p css={[portfolioListCardText]}>
-          架空の民宿をイメージして制作したWebsiteです。
+          初めて制作したポートフォリオサイトです。
         </p>
       </div>
     </a>

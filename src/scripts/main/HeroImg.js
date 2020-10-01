@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
-import heroImage from "images/heroImage.jpg";
-import titleImage from "images/title.png";
+import heroImage from "src/images/heroImage.jpg";
+import titleImage from "src/images/title.png";
 
 const heroImageStyle = css`
   background-image: url(${heroImage});
