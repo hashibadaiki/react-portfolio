@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
-import { baseCSS } from "src/scripts/Const";
+import { baseCSS } from "src/constants/baseCSS";
 
 const footer = css`
   background-color: ${baseCSS.backGroundColor};

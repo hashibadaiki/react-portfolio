@@ -2,10 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Global } from "@emotion/core";
 import * as serviceWorker from "src/serviceWorker";
-import { Header } from "src/scripts/Header";
-import { Main } from "src/scripts/Main";
-import { Footer } from "src/scripts/Footer";
-import { resetCSS } from "src/scripts/Const";
+import { Header } from "src/sections/Header";
+import { Main } from "src/sections/Main";
+import { Footer } from "src/sections/Footer";
+import { resetCSS } from "src/constants/resetCSS";
 
 ReactDOM.render(
   <React.StrictMode>
