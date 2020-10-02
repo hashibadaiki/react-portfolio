@@ -5,7 +5,7 @@ import { baseCSS } from "src/constants/baseCSS";
 const profileListDetails = css`
   color: ${baseCSS.titleColor};
   font-family: ${baseCSS.englishFont};
-  font-size: 1.5rem;
+  font-size: ${baseCSS.subtitleSize};
   font-weight: bold;
   margin: 10px 0;
 `;
@@ -15,7 +15,7 @@ const profileListWorkExperience = css`
 `;
 
 const profileText = css`
-  font-size: 1.1rem;
+  font-size: ${baseCSS.textSize};
   line-height: 2;
 `;
 

@@ -10,7 +10,7 @@ const contactList = css`
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  font-size: 1.5rem;
+  color: ${baseCSS.headFooterColor};
 `;
 
 const contactListTwitterGithub = css`
@@ -29,7 +29,7 @@ const howToContact = css`
 const copyright = css`
   text-align: center;
   padding: 20px 0;
-  font-size: 0.9rem;
+  font-size: ${baseCSS.textSize};
   color: ${baseCSS.headFooterColor};
 `;
 
@@ -40,17 +40,17 @@ export const Footer = () => {
         <div css={contactList}>
           <a href="https://twitter.com/baan_nasebanaru">
             <div css={contactListTwitterGithub}>
-              <i class="fab fa-twitter-square fa-2x"></i>
+              <i className="fab fa-twitter-square fa-2x"></i>
             </div>
           </a>
           <a href="https://github.com/hashibadaiki">
             <div css={contactListTwitterGithub}>
-              <i class="fab fa-github-square fa-2x"></i>
+              <i className="fab fa-github-square fa-2x"></i>
             </div>
           </a>
           <a href="https://www.facebook.com/daiki.hasiba">
             <div css={contactListFacebook}>
-              <i class="fab fa-facebook-square fa-2x"></i>
+              <i className="fab fa-facebook-square fa-2x"></i>
             </div>
           </a>
         </div>

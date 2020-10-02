@@ -4,4 +4,7 @@ export const baseCSS = {
   backGroundColor: "rgba(12, 12, 11, 0.925)",
   headFooterColor: "rgb(238, 242, 245)",
   annotationColor: "rgb(129, 126, 126)",
+  titleSize: "48px",
+  subtitleSize: "24px",
+  textSize: "16px",
 };

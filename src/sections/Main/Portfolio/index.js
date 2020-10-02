@@ -1,19 +1,14 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 import { baseCSS } from "src/constants/baseCSS";
+import { frameCSS } from "src/constants/commonCSS";
 import { Portfolio1 } from "src/sections/Main/Portfolio/Portfolio1";
 import { Portfolio2 } from "src/sections/Main/Portfolio/Portfolio2";
 import { Portfolio3 } from "src/sections/Main/Portfolio/Portfolio3";
 import { Portfolio4 } from "src/sections/Main/Portfolio/Portfolio4";
 
-const basicStyle = css`
-  width: 80%;
-  margin: 0 auto;
-  padding: 30px 0;
-`;
-
 const portfolioTitle = css`
-  font-size: 3rem;
+  font-size: ${baseCSS.titleSize};
   padding: 30px 0;
   font-family: ${baseCSS.englishFont};
 `;
@@ -28,7 +23,7 @@ const portfolioList = css`
 export const Portfolio = () => {
   return (
     <div>
-      <section css={basicStyle}>
+      <section css={frameCSS}>
         <h2 css={portfolioTitle}>My portfolio</h2>
         <div css={portfolioList}>
           <Portfolio1 />

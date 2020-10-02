@@ -3,9 +3,7 @@ import { css, jsx } from "@emotion/core";
 import { baseCSS } from "src/constants/baseCSS";
 
 const navigationWide = css`
-  display: inline-block;
   width: 100%;
-  transform: scale(1, 1);
   height: 80px;
   color: ${baseCSS.headFooterColor};
   z-index: 1000;
@@ -19,7 +17,7 @@ const navigationList = css`
   justify-content: space-around;
   height: 100%;
   width: 100%;
-  font-size: 2rem;
+  font-size: ${baseCSS.subtitleSize};
   text-align: center;
   background-color: ${baseCSS.backGroundColor};
 `;

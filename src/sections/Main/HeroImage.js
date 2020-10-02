@@ -9,7 +9,7 @@ const heroImageStyle = css`
   background-position: center;
   height: 600px;
   width: 100%;
-  z-index: 2;
+  z-index: 100;
   position: relative;
 `;
 const heroImageBack = css`
@@ -20,7 +20,6 @@ const heroImageBack = css`
   );
   height: 300px;
   background-position: center;
-  z-index: 10;
 `;
 
 const heroTitle = css`
